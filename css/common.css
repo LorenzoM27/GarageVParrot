@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Rajdhani:wght@400;700&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Rajdhani', sans-serif;
+    /*font-weight: bold;*/
+    
+}
+h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 12OOpx;
+    margin: auto;
+}
+
+/********* HEADER ***********/
+
+header {
+    box-shadow: inset 0px 30px 10px #262526;
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: center ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.headerLogo a {
+   
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #D92332;
+}
+
+.logo {
+    width: 60%;
+}
+
+.headerNav li {
+    text-align: center;
+    /*padding: 1rem;*/
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    
+}
+
+.headerNav ul {
+    padding-left: 0;
+}
+
+.headerNav li {
+    list-style-type: none;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+}
+
+.opinion, .about, .account, .contact {
+    background-color: #262526;
+    color: white;
+}
+
+.opinion:hover, .about:hover, .account:hover, .contact:hover {
+    color:  #262526;
+    background-color: #f2f2f2f2;
+}
+
+
+
+
+@media screen and (min-width:980px) {
+
+    .headerSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: auto;
+    }
+    .headerNav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerNav li {
+
+        border-bottom: none;
+        margin: 10px;
+    }
+    .logo{
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .headerLogo a {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
