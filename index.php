@@ -18,6 +18,7 @@
             </div>
             <nav class="headerNav">
                 <ul class="container">
+                    <li><a class="t" href="#"> </a></li>
                     <li><a class="contact" href="contact.php">Contact</a></li>
                     <li><a class="opinion" href="opinion.php">Avis</a></li>
                     <li><a class="account" href="account.php">Connexion</a></li>
@@ -32,12 +33,17 @@
             <img class="activity-image" src="img/mecanique.jpeg" alt="Réparation et entretien des véhicules">
             <div class="activity-detail">
                 <h3>Réparation carrosserie et mécanique</h3>
-                <p>Nos experts mécaniciens réparent et remplacent les pièces endomagées de votre véhicules. Notre carrossier Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo, dolorum quos earum maxime quod, harum dolores asperiores quidem molestias dolorem voluptatem odit voluptates laudantium!</p>
-                
+                <p>Nos experts mécaniciens réparent et remplacent les pièces endomagées de votre véhicules. Notre carrossier Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo, dolorum quos earum maxime quod, harum dolores asperiores quidem molestias dolorem voluptatem odit voluptates laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam autem sequi assumenda voluptatum placeat?</p>
                 <a class="button" href="#">Prendre rendez-vous</a>
-                
-                
             </div>
+        </section>
+        <section class="activity">
+            <div class="activity-detail">
+                <h3>Révision de votre véhicule</h3>
+                <p>Nos experts passent au crible votre véhicule afin de vous permettre de rouler l'esprit libre. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo, dolorum quos earum maxime quod, harum dolores asperiores quidem molestias dolorem voluptatem odit voluptates laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam autem sequi assumenda voluptatum placeat?</p>
+                <a class="button" href="#">Prendre rendez-vous</a>
+            </div>
+            <img class="activity-image2" src="img/revision.jpeg" alt="Réparation et entretien des véhicules">
         </section>
 
 

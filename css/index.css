@@ -29,7 +29,7 @@
 .activity-detail p {
     text-align: justify;
 }
-.activity-image {
+.activity-image, .activity-image2  {
     max-width: 350px;
     max-height: 350px;
     border-radius: 25% 10%;
@@ -67,7 +67,19 @@ main {
     max-width: 500px;
     height: auto;
 }
+.activity-image2 {
+    margin-left: 10rem;
+    max-width: 500px;
+    height: auto;
+}
 
+.button {
+    margin-top: 2rem;
+    transition: transform .2s
+}
 
+.button:hover {
+    transform: scale(1.1);
 
+}
 }
