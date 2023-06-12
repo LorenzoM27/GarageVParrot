@@ -37,13 +37,21 @@
                 <a class="button" href="#">Prendre rendez-vous</a>
             </div>
         </section>
-        <section class="activity">
+        <section class="activity2">
             <div class="activity-detail">
                 <h3>Révision de votre véhicule</h3>
                 <p>Nos experts passent au crible votre véhicule afin de vous permettre de rouler l'esprit libre. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo, dolorum quos earum maxime quod, harum dolores asperiores quidem molestias dolorem voluptatem odit voluptates laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam autem sequi assumenda voluptatum placeat?</p>
                 <a class="button" href="#">Prendre rendez-vous</a>
             </div>
-            <img class="activity-image2" src="img/revision.jpeg" alt="Réparation et entretien des véhicules">
+            <img class="activity-image2" src="img/revision.jpeg" alt="Révision de votre véhicule">
+        </section>
+        <section class="activity">
+            <img class="activity-image" src="img/occasion.jpeg" alt="Véhicules d'occasion">
+            <div class="activity-detail">
+                <h3>Nos véhicules d'occasion</h3>
+                <p>Révisés, entiérement controlés, nos véhicules d'occasion sont livrés avec le contrôle technique a jour, toutes les réparations sont faites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo, dolorum quos earum maxime quod, harum dolores asperiores quidem molestias dolorem voluptatem odit voluptates laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam autem sequi assumenda voluptatum placeat?</p>
+                <a class="button" href="#">Voir nos véhicules d'occasion</a>
+            </div>
         </section>
 
 
