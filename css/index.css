@@ -25,6 +25,7 @@
     justify-content: top;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .activity-detail h3 {
@@ -46,6 +47,8 @@
     padding: 1rem 5rem 1rem 5rem;
     border-radius: 1rem;
 }
+
+
 
 @media screen and (min-width:980px) {
 
