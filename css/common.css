@@ -93,6 +93,39 @@ li a {
     background-color: #f2f2f2f2;
 }
 
+/********* Footer **************/
+
+footer {
+    background-image: url("../img/footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.footer_section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.fa-brands {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
 
 
 
@@ -125,5 +158,10 @@ li a {
         flex-direction: row;
         justify-content: flex-start;
     }
+ /****** Footer *******/
 
+ .footer {
+    display: flex;
+    justify-content: space-between;
+ }
 }
