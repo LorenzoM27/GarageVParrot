@@ -1,4 +1,3 @@
-CREATE SCHEMA garage_VParrot;
 CREATE TABLE garage_VParrot.occasion_cars
 (
     Id int not null primary key auto_increment,
