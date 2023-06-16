@@ -6,7 +6,7 @@
             <nav class="headerNav">
                 <ul class="container">
                     <li><a class="t" href="#"> </a></li>
-                    <li><a class="header-button" href="#">Gérer les comptes</a></li>
+                    <li><a class="header-button" href="../registration/account.php">Gérer les comptes</a></li>
                     <li><a class="header-button" href="#">Les services</a></li>
                     <li><a class="header-button" href="#">Les horaires</a></li>
                     <li><a class="header-button" href="#">Avis des clients</a></li>
