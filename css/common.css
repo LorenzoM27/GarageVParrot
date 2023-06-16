@@ -30,6 +30,10 @@ h1 {
     
 }
 
+h2, h3 {
+    color: #d9777f;
+}
+
 .container {
     max-width: 12OOpx;
     margin: auto;

@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-input {
+    margin: 1rem;
+    width: 25rem;
+    height: 3rem;
+}
+
+.form-button {
+    margin-top: 2rem;
+    width: 15rem;
+    background-color: #262526;
+    color: #f2f2f2f2;
+}

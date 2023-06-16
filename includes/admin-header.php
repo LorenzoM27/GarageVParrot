@@ -1,7 +1,7 @@
 <header>
         <section class="headerSection">
             <div class="container headerLogo">
-                <a href="index.php"><img class="logo" src="../img/garage-vparrot-t.png" alt="Logo Garage V.Parrot"><h1> GARAGE V.PARROT</h1>
+                <a href="../index.php"><img class="logo" src="../img/garage-vparrot-t.png" alt="Logo Garage V.Parrot"><h1> GARAGE V.PARROT</h1>
             </div>
             <nav class="headerNav">
                 <ul class="container">
