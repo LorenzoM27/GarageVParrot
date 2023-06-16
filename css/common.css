@@ -26,6 +26,8 @@ h1 {
     font-size: 3.5rem;
     margin-top: 0;
     margin-bottom: 0;
+    color: #D92332;
+    
 }
 
 .container {
@@ -85,12 +87,12 @@ li a {
     padding: 1rem;
 }
 
-.opinion, .about, .account, .contact {
+.header-button {
     color:  #262526;
     /* background-color: #f2f2f2f2; */
 }
 
-.opinion:hover, .about:hover, .account:hover, .contact:hover {
+.header-button:hover {
     background-color: #262526;
     color: white;
 }

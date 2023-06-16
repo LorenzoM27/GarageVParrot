@@ -2,8 +2,8 @@
         <div class="container footer">
             <section class="footer_section">
                 <h4>Contact</h4>
-                <p><a href="https://goo.gl/maps/q2K9QetJXvA9TLB8A">12 rue de mon garage <br>
-                    75000 Paris</a></p>
+                <p><a href="https://goo.gl/maps/GYjVsQqjm4F86qBx7" target="_blank">12 rue de mon garage <br>
+                    31000 Toulouse</a></p>
                 <a href="tel:+0102030405" target="_blank"> 01 02 03 04 05 </a> 
             </section>
             <section class="footer_section">

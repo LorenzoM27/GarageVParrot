@@ -5,11 +5,11 @@
             </div>
             <nav class="headerNav">
                 <ul class="container">
-                    <li><a class="t" href="#"> </a></li>
-                    <li><a class="contact" href="contact.php">Contact</a></li>
-                    <li><a class="opinion" href="opinion.php">Avis</a></li>
-                    <li><a class="account" href="account.php">Connexion</a></li>
-                    <li><a class="about" href="#">A propos</a></li>
+                    <li><a class="t" href="users/admin.php"> </a></li>
+                    <li><a class="header-button" href="contact.php">Contact</a></li>
+                    <li><a class="header-button" href="opinion.php">Avis</a></li>
+                    <li><a class="header-button" href="account.php">Connexion</a></li>
+                    <li><a class="header-button" href="#">A propos</a></li>
                 </ul>
             </nav>
         </section>
