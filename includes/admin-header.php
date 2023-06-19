@@ -10,7 +10,7 @@
                     <li><a class="header-button" href="#">Les services</a></li>
                     <li><a class="header-button" href="#">Les horaires</a></li>
                     <li><a class="header-button" href="#">Avis des clients</a></li>
-                    <li><a class="header-button" href="../index.php">Déconnexion</a></li>
+                    <li><a class="header-button" href="../registration/logout.php">Déconnexion</a></li>
                 </ul>
             </nav>
         </section>
