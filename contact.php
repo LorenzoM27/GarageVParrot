@@ -5,10 +5,11 @@
         $subject = $_POST["subject"];
         $message = $_POST["message"];
     
-        $toEmail = "vincent.parrot@gmail.com";
+        $toEmail = "lorenzo.menino@gmail.com";
+        // le mdp -> VParrotGarage et mail : vincent.parrotgarage@gmail.com
         $mailHeaders = "From: " . $name . "<". $email .">\r\n";
         if(mail($toEmail, $subject, $message, $mailHeaders)) {
-            $mail_msg = "Votre messag à bien été envoyé.";
+            $mail_msg = "Votre message à bien été envoyé.";
             $type_mail_msg = "success";
         }else{
             $mail_msg = "Une erreur est survenue, veuillez réessayer.";
@@ -24,6 +25,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/contact.js"></script>
     <link rel="stylesheet" href="css/common.css" type="text/css">
     <link rel="stylesheet" href="css/contact.css" type="text/css">
