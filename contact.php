@@ -36,7 +36,7 @@
     <main>
         <div id="box">
             <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
-                <h3>Nous contacter</h3>
+                <h2>Nous contacter</h2>
                 <label>Nom: <span>*</span></label>
                 <input type="text" id="name" name="name" placeholder="Nom"/>
                 <label>Email: <span>*</span></label><span id="info" class="info"></span>
@@ -46,7 +46,7 @@
                 <label>Message:</label>
                 <textarea id="message" name="message" placeholder="Dites nous ce qui vous tracasse !"></textarea>
                 <input class="submitButton" type="submit" name="send" value="Envoyer le message"/>
-                <div id="statusMessage"> 
+                <div id="statusMessage">
                     <?php if (! empty($db_msg)) { ?>
                     <p class='<?php echo $type_db_msg; ?>Message'><?php echo $db_msg; ?></p>
                     <?php } ?>

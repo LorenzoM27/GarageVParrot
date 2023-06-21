@@ -1,3 +1,8 @@
+<?php 
+    require('registration/config.php');
+    $result = mysqli_query($conn,"SELECT * FROM horaires");
+?>
+
 <footer>
         <div class="container footer">
             <section class="footer_section">
@@ -7,15 +12,30 @@
                 <a href="tel:+0102030405" target="_blank"> 01 02 03 04 05 </a> 
             </section>
             <section class="footer_section">
+                <?php
+                    if (mysqli_num_rows($result) > 0) {
+                        $i=0;
+                        while($row = mysqli_fetch_array($result)) {
+                ?>
                 <h4>Horaires d'ouverture</h4>
-                <p>Lundi: 8:45 - 12:00, 14:00 - 18:00</p>
-                <p>Mardi: 8:45 - 12:00, 14:00 - 18:00</p>
-                <p>Mercredi: 8:45 - 12:00, 14:00 - 18:00</p>
-                <p>Jeudi: 8:45 - 12:00, 14:00 - 18:00</p>
-                <p>Vendredi: 8:45 - 12:00, 14:00 - 18:00</p>
-                <p>Samedi: 8:45 - 12:00</p>
-                <p>Dimanche: Fermé</p>
+                <p>Lundi: <?php echo $row["lundi"];?> </p>
+                <p>Mardi: <?php echo $row['mardi'];?></p>
+                <p>Mercredi: <?php echo $row['mercredi'];?></p>
+                <p>Jeudi: <?php echo $row['jeudi'];?></p>
+                <p>Vendredi: <?php echo $row['vendredi'];?></p>
+                <p>Samedi: <?php echo $row['samedi'];?></p>
+                <p>Dimanche: <?php echo $row['dimanche'];?></p>
             </section>
+            <?php
+                $i++;
+                }
+            ?>
+                <?php
+                    }
+                    else{
+                        echo "No result found";
+                    }
+                ?>
             <section class="footer_section">
                 <h4>Nous suivre</h4>
                 <div>
