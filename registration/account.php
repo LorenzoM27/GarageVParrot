@@ -36,7 +36,7 @@
             <input type="text" class="form-input" name="email" placeholder="Email" required />
             <input type="password" class="form-input" name="password" placeholder="Mot de passe" required />
             <input type="text" class="form-input" name="type" placeholder="admin/user" required />
-            <input type="submit" class="form-button" name="submit" value="Ajouter" required/>
+            <input type="submit" class="button" name="submit" value="Ajouter un utilisateur" required/>
          </form>
       </main>
    </body>
