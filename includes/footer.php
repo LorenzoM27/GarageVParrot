@@ -33,7 +33,7 @@
                 <?php
                     }
                     else{
-                        echo "No result found";
+                        echo "Aucun résultat";
                     }
                 ?>
             <section class="footer_section">

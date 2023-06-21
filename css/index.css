@@ -40,14 +40,14 @@
     border-radius: 25% 10%;
 }
 
-.button {
+/*.button {
     text-decoration: none;
     text-align: center;
     color: #f2f2f2;
     background-color: #262526;
     padding: 1rem 5rem 1rem 5rem;
     border-radius: 1rem;
-}
+}*/
 
 
 
@@ -81,7 +81,7 @@ main {
 
 }
 
-.button {
+/*.button {
     margin-top: 2rem;
     transition: transform .2s
 }
@@ -89,5 +89,5 @@ main {
 .button:hover {
     transform: scale(1.05);
 
-}
+}*/
 }
