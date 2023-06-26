@@ -1,0 +1,31 @@
+main {
+    text-align: center;
+}
+
+.service {
+    padding-bottom: 4rem;
+}
+
+.description {
+    max-width: 400px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.button {
+    max-width: 300px;
+}
+
+
+@media screen and (min-width:980px) {
+
+    .service-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem;
+        
+    }
+    
+}
