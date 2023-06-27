@@ -9,7 +9,7 @@
                         $i=0;
                         while($row = mysqli_fetch_array($result)) {
             ?>
-            <div class="div-test">
+            <div class="div-activity">
                 <img class="activity-image" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" /> 
                 <div class="activity-detail">
                     <h3><?php echo $row["services"];?></h3>

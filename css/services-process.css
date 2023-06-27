@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+}
+
+
+.title-input {
+    width: 300px;
+}
+
+.service-description {
+    width: 300px;
+    height: 150px;
+}
+
+.service {
+    margin: 2rem;
+    text-align: start;
+}

@@ -32,27 +32,27 @@ $row= mysqli_fetch_array($result);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/common.css" type="text/css">
-    <link rel="stylesheet" href="../css/opening-process.css" type="text/css">
+    <link rel="stylesheet" href="../css/services-process.css" type="text/css">
     <title>Modification des services</title>
 </head>
 <body>
     <?php include('../includes/admin-header.php'); ?>
     <main>
         <h2>Modifier les horaires</h2>
-        <form name="frmUser" method="post" action="">
+        <form name="service-form" method="post" action="">
             <p><?php if(isset($message)) { echo $message; } ?></p>
 
             <div class="service">
                 <label>Titre du service : </label>
                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                <input type="text" name="services"  value="<?php echo $row['services']; ?>">
+                <input class="title-input" type="text" name="services"  value="<?php echo $row['services']; ?>">
             </div>
             <div class="service">
                 <label>Description : </label>
-                <textarea  name="description" placeholder="<?php echo $row['description']; ?>"></textarea>
+                <textarea class="service-description" name="description" placeholder="<?php echo $row['description']; ?>"></textarea>
                 
             </div>
-            <div class="day">
+            <div class="service">
                 <label>Image : </label>
                 <input type="file" name="image" placeholder="modifier l'image">
             </div>

@@ -9,7 +9,7 @@
                         $i=0;
                         while($row = mysqli_fetch_array($result)) {
             ?>
-            <div class="div-test">
+            <div class="div-activity div-activity2">
                 <div class="activity-detail">
                     <h3><?php echo $row["services"];?></h3>
                     <p><?php echo $row["description"];?></p>

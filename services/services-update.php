@@ -10,7 +10,7 @@ $result = mysqli_query($conn,"SELECT * FROM services");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/common.css" type="text/css">
-    <link rel="stylesheet" href="../css/services.css" type="text/css">
+    <link rel="stylesheet" href="../css/services-update.css" type="text/css">
     <title>Gérer les services</title>
 </head>
 <body>
