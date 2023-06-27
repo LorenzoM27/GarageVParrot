@@ -71,6 +71,10 @@ main {
 
 }*/
 
+.activity, .activity2 {
+    margin: 2rem;
+}
+
 .div-test {
     display: flex;
     flex-direction: row;

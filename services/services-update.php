@@ -27,7 +27,7 @@ $result = mysqli_query($conn,"SELECT * FROM services");
         ?>
             <div class="service">
                 <div>
-                    <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="300" width="300"/>';?>
+                <img class="activity-image" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
                     <h3><?php echo $row["services"];?> </h3>
                     <p class="description"><?php echo $row['description'];?></p>
                     

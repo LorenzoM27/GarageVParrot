@@ -9,15 +9,13 @@ if(count($_POST)>0) {
     $image = $_POST['image'];
     
     
-    $query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."',`image`='".$image."' WHERE `id` = '".$id."'";
+    //$query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."',`image`='".$image."' WHERE `id` = '".$id."'";
 
-    //$query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."' WHERE `id` = '".$id."'";
-    
+    $query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."' WHERE `id` = '".$id."'";
     
     $result = mysqli_query($conn, $query);
     
     $message = "Service modifié avec succés";
-    
     
     }
 
