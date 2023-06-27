@@ -1,5 +1,5 @@
 <?php 
-    require('registration/config.php');
+    //require('registration/config.php');
     $result = mysqli_query($conn,"SELECT * FROM horaires");
 ?>
 

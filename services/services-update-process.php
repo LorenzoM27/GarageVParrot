@@ -1,20 +1,26 @@
 <?php
 require('../registration/config.php');
+
 if(count($_POST)>0) {
 
-$id = $_POST['id'];
-$services = $_POST['services'];
-$description = $_POST['description'];
-$image = $_POST['image'];
+    $id = $_POST['id'];
+    $services = $_POST['services'];
+    $description = $_POST['description'];
+    $image = $_POST['image'];
+    
+    
+    $query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."',`image`='".$image."' WHERE `id` = '".$id."'";
 
+    //$query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."' WHERE `id` = '".$id."'";
+    
+    
+    $result = mysqli_query($conn, $query);
+    
+    $message = "Service modifié avec succés";
+    
+    
+    }
 
-$query = "UPDATE `horaires` SET `id`='".$id."',`services`='".$services."',`description`='".$description."',`image`='".$image."' WHERE `id` = '".$id."'";
-
-$result = mysqli_query($conn, $query);
-
-$message = "Service modifié avec succés";
-
-}
 
 $result = mysqli_query($conn,"SELECT * FROM services WHERE id='" . $_GET['id'] . "'");
 $row= mysqli_fetch_array($result);
@@ -45,14 +51,15 @@ $row= mysqli_fetch_array($result);
             </div>
             <div class="service">
                 <label>Description : </label>
-                <input type="text" name="description"  value="<?php echo $row['description']; ?>">
+                <textarea  name="description" placeholder="<?php echo $row['description']; ?>"></textarea>
+                
             </div>
             <div class="day">
                 <label>Image : </label>
-                <input type="text" name="image"  value="<?php echo $row['image']; ?>">
+                <input type="file" name="image" placeholder="modifier l'image">
             </div>
             
-            <input type="submit" name="submit" value="Modifier les horaires" class="button">
+            <input type="submit" name="submit" value="Modifier le service" class="button">
             
            
         </form>

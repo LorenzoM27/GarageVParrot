@@ -1,3 +1,9 @@
+<?php 
+    require('registration/config.php');
+    
+?>
+
+
 <?php
     if(!empty($_POST["send"])) {
         $name = $_POST["name"];
