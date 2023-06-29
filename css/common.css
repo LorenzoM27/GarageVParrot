@@ -59,7 +59,10 @@ h3 {
 
 }
 
-
+.image {
+    max-width: 100%;
+    max-height: 700px;
+}
 
 /********* HEADER ***********/
 
@@ -156,6 +159,7 @@ footer a {
 
 
 @media screen and (min-width:980px) {
+
 
     .headerSection {
         display: flex;
