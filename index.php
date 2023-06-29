@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/common.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/opinion.css" type="text/css">
     <title>Garage V.Parrot</title>
 </head>
 <body>
@@ -23,11 +24,15 @@
         <?php include('services/service1.php'); ?>
         <?php include('services/service2.php'); ?>
         <?php include('services/service3.php'); ?>
+        <?php include('opinion/opinions-list.php'); ?>
     </main>
     
     <?php include('includes/footer.php'); ?>
 </body>
 </html>
+
+
+
 
 
 
