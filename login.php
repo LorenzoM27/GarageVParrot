@@ -19,8 +19,7 @@
         $_SESSION['email'] = $email;
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($conn, $password);
-            $query = "SELECT * FROM `users` WHERE email='$email' 
-        and password='".hash('sha256', $password)."'";
+            $query = "SELECT * FROM `users` WHERE email='$email' and password='".hash('sha256', $password)."'";
         
         $result = mysqli_query($conn,$query) or die(mysql_error());
         
