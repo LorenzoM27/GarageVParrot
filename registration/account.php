@@ -14,20 +14,18 @@
          <?php
             require('config.php');
             if (isset($_REQUEST['email'], $_REQUEST['type'], $_REQUEST['password'])){
-              // récupérer l'email 
+               
               $email = stripslashes($_REQUEST['email']);
               $email = mysqli_real_escape_string($conn, $email);
             
-              // récupérer le type 
-              $username = stripslashes($_REQUEST['type']);
-              //$username = mysqli_real_escape_string($conn, $type); 
+              $type = stripslashes($_REQUEST['type']);
+              $type = mysqli_real_escape_string($conn, $type); 
             
-              // récupérer le mot de passe 
               $password = stripslashes($_REQUEST['password']);
               $password = mysqli_real_escape_string($conn, $password);
                
               $query = "INSERT into `users` ( email, type, password)
-                    VALUES ('$email', 'user', '".hash('sha256', $password)."')";
+                    VALUES ('$email', '$type', '".hash('sha256', $password)."')";
               $res = mysqli_query($conn, $query);
              }
              ?>

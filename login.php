@@ -41,7 +41,7 @@
             <h2 class="form-title">Accéder à mon espace</h2>
             <input type="text" class="form-input" name="email" placeholder="Email" required />
             <input type="password" class="form-input" name="password" placeholder="Mot de passe" required />
-            <input type="submit" class="form-button" name="submit" value="Me connecter" required/>
+            <input type="submit" class="button" name="submit" value="Me connecter" required/>
             <?php if (! empty($message)) { ?>
                 <p class="errorMessage"><?php echo $message; ?></p>
             <?php } ?>
