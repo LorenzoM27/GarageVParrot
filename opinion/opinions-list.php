@@ -4,6 +4,7 @@
 ?>
 
 <section class="opinions-section">
+    <h2>Les avis de nos clients</h2>
     <div class="opinions-list">
         <?php
             if (mysqli_num_rows($result) > 0) {
@@ -14,7 +15,7 @@
              <div class="opinions">
                 <p><strong><?php echo $row["name"];?></strong></p>
                 <p><?php echo $row["score"];?></p>
-                <p><?php echo $row["message"];?></p>
+                <p class="message"><?php echo $row["message"];?></p>
                     
             </div>
     

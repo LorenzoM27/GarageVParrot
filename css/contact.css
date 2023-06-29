@@ -25,13 +25,7 @@ input{
 	border-radius:3px;
 	padding: 0.5rem;
 }
-.submitButton{
-	background-color:#262526;
-	border:1px solid white;
-	font-Weight:bold;
-	font-size: 2rem;
-	color:#f2f2f2f2;
-}
+
 textarea{
 	width:100%;
 	height:80px;

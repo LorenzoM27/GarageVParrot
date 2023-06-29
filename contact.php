@@ -51,7 +51,7 @@
                 <input type="text" id="subject" name="subject" placeholder="Réparation, entretien, rendez-vous, occasion..."/>
                 <label>Message:</label>
                 <textarea id="message" name="message" placeholder="Dites nous ce qui vous tracasse !"></textarea>
-                <input class="submitButton" type="submit" name="send" value="Envoyer le message"/>
+                <input class="button" type="submit" name="send" value="Envoyer le message"/>
                 <div id="statusMessage">
                     <?php if (! empty($db_msg)) { ?>
                     <p class='<?php echo $type_db_msg; ?>Message'><?php echo $db_msg; ?></p>

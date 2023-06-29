@@ -1,8 +1,29 @@
 
-.opinion-section {
+.opinions-section {
+    
     text-align: center;
+    padding: 2rem;
 }
 
-.opinion-list {
+.opinions-list {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}
+
+.opinions {
+    flex: 0 0 auto;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #262526;
+    border-radius: 50px;
+}
+
+.message {
+    max-width: 350px;
+    max-height: 125px;
+    text-align: justify;
+    overflow: auto;
 }

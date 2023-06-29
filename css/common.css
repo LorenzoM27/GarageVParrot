@@ -30,7 +30,11 @@ h1 {
     
 }
 
-h2, h3 {
+h2 {
+    color: #d94350;
+}
+
+h3 {
     color: #d9777f;
 }
 
@@ -43,11 +47,10 @@ h2, h3 {
 .button {
     margin-top: 2rem;
     text-decoration: none;
-    text-align: center;
     color: #f2f2f2;
     background-color: #262526;
     padding: 1rem 5rem 1rem 5rem;
-    border-radius: 1rem;
+    border-radius: 15px;
     transition: transform .2s
 }
 
