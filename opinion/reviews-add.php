@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="../img/favicon.png" />
       <link rel="stylesheet" href="../css/common.css" type="text/css">
-      <link rel="stylesheet" href="../css/opinion.css" type="text/css">  
+      <link rel="stylesheet" href="../css/reviews.css" type="text/css">  
       <title>Donner un avis</title>
    </head>
    <body>
@@ -42,7 +42,7 @@
                 $message = stripslashes($_REQUEST['message']);
                 $message = mysqli_real_escape_string($conn, $message);
                 
-                $query = "INSERT into `opinion` ( name, score, display, message)
+                $query = "INSERT into `reviews` ( name, score, display, message)
                         VALUES ('$name', '$score', '$display', '$message')";
                 $res = mysqli_query($conn, $query);
                 }

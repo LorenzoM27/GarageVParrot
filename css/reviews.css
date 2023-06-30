@@ -1,18 +1,18 @@
 
-.opinions-section {
+.reviews-section {
     
     text-align: center;
     padding: 2rem;
 }
 
-.opinions-list {
+.reviews-list {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     
 }
 
-.opinions {
+.reviews {
     flex: 0 0 auto;
     margin: 3rem;
     padding: 1rem;
@@ -66,4 +66,9 @@ textarea{
 	border-radius:3px;
 	padding:5px;
 	resize:none;
+}
+
+.reviews-name {
+    font-weight: bold;
+
 }

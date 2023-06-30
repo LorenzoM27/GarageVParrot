@@ -1,4 +1,4 @@
-CREATE TABLE garage_VParrot.opinion
+CREATE TABLE garage_VParrot.reviews
 (
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,

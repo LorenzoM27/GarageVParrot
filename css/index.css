@@ -40,15 +40,6 @@
     border-radius: 25% 10%;
 }
 
-/*.button {
-    text-decoration: none;
-    text-align: center;
-    color: #f2f2f2;
-    background-color: #262526;
-    padding: 1rem 5rem 1rem 5rem;
-    border-radius: 1rem;
-}*/
-
 
 
 @media screen and (min-width:980px) {
@@ -63,12 +54,6 @@ main {
 .services {
     margin-bottom: 5rem;
 }
-/*.activity, .activity2 {
-    display: flex;
-    flex-direction: row;
-    margin: 2rem;
-
-}*/
 
 .activity, .activity2 {
     margin: 2rem;
@@ -94,13 +79,4 @@ main {
 
 }
 
-/*.button {
-    margin-top: 2rem;
-    transition: transform .2s
-}
-
-.button:hover {
-    transform: scale(1.05);
-
-}*/
 }

@@ -7,7 +7,7 @@
                 <ul class="container">
                     <li><a class="t" href="#"> </a></li>
                     <li><a class="header-button" href="#">Gérer les véhicules d'occasion</a></li>
-                    <li><a class="header-button" href="../services/services-update.php">Modérer les avis</a></li>
+                    <li><a class="header-button" href="../services/reviews-moderate.php">Modérer les avis</a></li>
                     <li><a class="header-button" href="../registration/logout.php">Déconnexion</a></li>
                 </ul>
             </nav>
