@@ -2,13 +2,10 @@
     require('../registration/config.php');
     if(count($_POST)>0) {
 
-    $id = $_POST['id'];
-    //$name = $_POST['name'];
-    //$score = $_POST['score'];
+   // $id = $_POST['id'];
     $display = $_POST['display'];
-    //$message = $_POST['message'];
 
-    $query = "UPDATE `reviews` SET `id`='".$id."',`display`='".$display."'";
+    $query = "UPDATE `reviews` SET `display`='".$display."'";
 
     $result = mysqli_query($conn, $query);
 
@@ -34,7 +31,7 @@
 </head>
 <body>
     <?php include('../includes/user-header.php'); ?>
-    <main>
+    <main class="reviews-update">
         <h2>Modérer un avis</h2>
         <div class="reviews">
             <p><strong class="reviews-name"><?php echo $row["name"];?></strong></p>
@@ -46,12 +43,9 @@
 
             <div class="reviews-display">
                 <label>Afficher cet avis ? </label>
-                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                 <input type="text" name="display"  placeholder="<?php echo $row['display']; ?>">
             </div>
             <input type="submit" name="submit" value="Modérer cet avis" class="button">
-            
-           
         </form>
     </main>
 </body>

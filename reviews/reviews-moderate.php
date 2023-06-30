@@ -33,7 +33,7 @@
                         <p class="message"><?php echo $row["message"];?></p>
                         <div class="reviews-list-update">
                             <a class="button" href="reviews-update-process.php?id=<?php echo $row["id"]; ?>">Modérer cette avis</a>
-                            <a class="button" href="reviews/reviews-delete.php">Supprimer cette avis</a>
+                            <a class="button" href="reviews-delete-process.php?id=<?php echo $row["id"]; ?>">Supprimer cet avis</a>
                         </div>     
                     </div>
                     
@@ -51,6 +51,7 @@
             </div>
            
         </section>
+        <?php include('reviews-user-add.php'); ?>
 
     </main>
     

@@ -77,3 +77,10 @@ textarea{
     font-weight: bold;
 
 }
+
+.reviews-update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
