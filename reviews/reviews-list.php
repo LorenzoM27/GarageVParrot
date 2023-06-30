@@ -30,6 +30,6 @@
             ?>
 
     </div>
-    <a class="button" href="opinion/reviews-add.php">Je donne mon avis</a>
+    <a class="button" href="reviews/reviews-add.php">Je donne mon avis</a>
 
 </section>

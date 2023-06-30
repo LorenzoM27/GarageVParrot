@@ -24,7 +24,7 @@
         <?php include('services/service1.php'); ?>
         <?php include('services/service2.php'); ?>
         <?php include('services/service3.php'); ?>
-        <?php include('opinion/reviews-list.php'); ?>
+        <?php include('reviews/reviews-list.php'); ?>
     </main>
     
     <?php include('includes/footer.php'); ?>

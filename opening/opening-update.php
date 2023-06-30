@@ -1,6 +1,6 @@
 <?php
-require('../registration/config.php');
-$result = mysqli_query($conn,"SELECT * FROM horaires");
+    require('../registration/config.php');
+    $result = mysqli_query($conn,"SELECT * FROM horaires");
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +32,6 @@ $result = mysqli_query($conn,"SELECT * FROM horaires");
                 <p>Vendredi: <?php echo $row['vendredi'];?></p>
                 <p>Samedi: <?php echo $row['samedi'];?></p>
                 <p>Dimanche: <?php echo $row['dimanche'];?></p>
-                
             </div>
             <a class= "button" href="opening-update-process.php?id=<?php echo $row["id"]; ?>">Mettre à jour les horaires d'ouverture</a>
             
