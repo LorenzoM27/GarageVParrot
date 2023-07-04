@@ -1,6 +1,5 @@
 <?php 
     require('registration/config.php');
-    //$result = mysqli_query($conn,"SELECT * FROM services WHERE id = '1'");
 ?>
 
 <!DOCTYPE html>
