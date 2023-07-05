@@ -1,9 +1,9 @@
 CREATE TABLE garage_VParrot.occasion_cars
 (
-    Id int not null primary key auto_increment,
+    id int not null primary key auto_increment,
     marque VARCHAR(100) not null,
     prix Int not null,
-    killométrage Int not null,
+    kilométrage Int not null,
     année Int not null,
     premiere_main VARCHAR(100) not null,
     nbr_proprietaires Int not null,

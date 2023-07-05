@@ -95,7 +95,7 @@ header {
 .headerNav li {
     text-align: center;
     /*padding: 1rem;*/
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #262526;
     font-weight: bold;
     
 }
@@ -111,7 +111,7 @@ header {
 
 li a {
     text-decoration: none;
-    color: black;
+    color: #262526;
     display: block;
     padding: 1rem;
 }

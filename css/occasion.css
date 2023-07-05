@@ -2,6 +2,11 @@ main {
     text-align: center;
 }
 
+.occasion-section {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     max-width: 300px;
     background-color: #fff;
@@ -21,4 +26,16 @@ main {
 
 .card-data {
     margin: 1rem;
+}
+
+@media screen and (min-width:980px) {
+
+    .occasion-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+    }
+
+
+
 }
