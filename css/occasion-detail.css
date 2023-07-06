@@ -1,36 +1,43 @@
-#slider {
-    position: relative;
-    max-width: 500px;
-    margin: auto;
+.slider-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.detail-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
 }
 
-.car-image {
-    max-width: 400px;
+table, caption, td, th {
+    border: 2px solid #262526;
+    border-collapse: collapse;
 }
 
-#precedent,
-#suivant {
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    position: absolute;
-    font-size: 5rem;
-    color: #262526;
-    padding: 10px;
+caption, th, td {
+    padding: 0.7rem;
+    }
+
+table {
+    min-width: 300px;
+    max-width: 500px;
+    margin: 2rem 2rem;
 }
 
-#precedent {
-    left: 0;
-}
 
-#suivant {
-    right: 0;
-}
+@media screen and (min-width:980px) {
+    .slider-section {
+        flex-direction: row;
+        align-items: start;
+    }
+    .table {
+        margin: 0 2rem;
+    }
 
-#slider:hover #precedent,
-#slider:hover #suivant {
-    opacity: 1;
+
 }
