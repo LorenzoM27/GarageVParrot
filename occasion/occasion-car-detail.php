@@ -3,6 +3,25 @@
     $result = mysqli_query($conn,"SELECT * FROM occasion_cars");
 ?>
 
+<?php
+    if(!empty($_POST["send"])) {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $subject = $_POST["subject"];
+        $message = $_POST["message"];
+    
+        $toEmail = "lorenzo.menino@gmail.com";
+        // le mdp -> VParrotGarage et mail : vincent.parrotgarage@gmail.com
+        $mailHeaders = "From: " . $name . "<". $email .">\r\n";
+        if(mail($toEmail, $subject, $message, $mailHeaders)) {
+            $mail_msg = "Votre message à bien été envoyé.";
+            $type_mail_msg = "success";
+        }else{
+            $mail_msg = "Une erreur est survenue, veuillez réessayer.";
+            $type_mail_msg = "error";
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,6 +29,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/contact.js"></script>
     <script src="../js/slider.js"></script>
     <link rel="icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +38,6 @@
     <link rel="stylesheet" type="text/css" href="../css/slider.css"/>
     <link rel="stylesheet" href="../css/occasion-detail.css" type="text/css">
     <link rel="stylesheet" href="../css/contact.css" type="text/css">
-    
     <title>Nos véhicules d'occasions</title>
 </head>
 <body>
@@ -35,6 +55,7 @@
                     </ul>
                 </nav>
             </section>
+        </header>
             <main>
                 <?php
                     if (mysqli_num_rows($result) > 0) {
@@ -171,4 +192,5 @@
                 
             </main>
             <?php include('../includes/footer.php'); ?>
-        </header>
+</body>
+</html>
