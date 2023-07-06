@@ -62,8 +62,8 @@
                     <?php } ?>
                 </div>
             </form>
-            </div>
-        </main>
+         </div>
+    </main>
     <?php include('includes/footer.php'); ?>
 
 </body>

@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="../css/common.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/slider.css"/>
     <link rel="stylesheet" href="../css/occasion-detail.css" type="text/css">
-    <link rel="stylesheet" href="../css/occasion.css" type="text/css">
+    <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    
     <title>Nos véhicules d'occasions</title>
 </head>
 <body>
@@ -135,9 +136,29 @@
 
                     </table>
                 </section>
-                <section class="detail-section">
-
-
+                <section class="contact-section">
+                    <div id="box">
+                        <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
+                            <h2>Nous contacter pour ce véhicule</h2>
+                            <label>Nom: <span>*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Nom"/>
+                            <label>Email: <span>*</span></label><span id="info" class="info"></span>
+                            <input type="text" id="email" name="email" placeholder="Email"/>
+                            <label>Sujet: <span>*</span></label>
+                            <input type="text" id="subject" name="subject" value="<?php echo $row['marque'];?>, <?php echo $row['année'];?>, <?php echo $row['prix'];?> €, <?php echo $row['kilométrage'];?> km"/>
+                            <label>Message:</label>
+                            <textarea id="message" name="message" placeholder="Besoin d'information ? Ecrivez-nous ici !"></textarea>
+                            <input class="button" type="submit" name="send" value="Envoyer le message"/>
+                            <div id="statusMessage">
+                                <?php if (! empty($db_msg)) { ?>
+                                <p class='<?php echo $type_db_msg; ?>Message'><?php echo $db_msg; ?></p>
+                                <?php } ?>
+                                <?php if (! empty($mail_msg)) { ?>
+                                <p class='<?php echo $type_mail_msg; ?>Message'><?php echo $mail_msg; ?></p>
+                                <?php } ?>
+                            </div>
+                        </form>
+                    </div>
                 </section>
                 <?php
                     $i++;
@@ -149,4 +170,5 @@
                 ?>
                 
             </main>
+            <?php include('../includes/footer.php'); ?>
         </header>

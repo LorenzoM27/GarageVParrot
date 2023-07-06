@@ -1,3 +1,7 @@
+main {
+    text-align: center;
+}
+
 .slider-section {
     display: flex;
     flex-direction: column;
@@ -24,7 +28,6 @@ caption, th, td {
     }
 
 table {
-    min-width: 300px;
     max-width: 500px;
     margin: 2rem 2rem;
 }
@@ -35,7 +38,7 @@ table {
         flex-direction: row;
         align-items: start;
     }
-    .table {
+    table {
         margin: 0 2rem;
     }
 
