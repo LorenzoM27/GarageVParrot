@@ -45,18 +45,18 @@ $row= mysqli_fetch_array($result);
 
             <div class="service">
                 <label>Titre du service : </label>
-                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                <input class="title-input" type="text" name="services"  value="<?php echo $row['services']; ?>">
+                <input type="hidden" name="id" value="<?php echo strip_tags($row['id']); ?>">
+                <input class="title-input" type="text" name="services"  value="<?php echo strip_tags($row['services']); ?>" required>
             </div>
             <div class="service">
                 <label>Description : </label>
-                <textarea class="service-description" name="description" placeholder="<?php echo $row['description']; ?>"></textarea>
+                <textarea class="service-description" name="description" placeholder="<?php echo strip_tags($row['description']); ?>" required></textarea>
                 
             </div>
-            <div class="service">
+            <!--<div class="service">
                 <label>Image : </label>
-                <input type="file" name="image" placeholder="modifier l'image">
-            </div>
+                <input type="file" name="image">
+            </div>-->
             
             <input type="submit" name="submit" value="Modifier le service" class="button">
             

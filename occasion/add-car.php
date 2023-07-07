@@ -76,7 +76,7 @@
 
                 
                 $query = "INSERT into `occasion_cars` (brand, price, km, year, first_hand, owners, energy, gearbox, color, doors, seats, puissance_fiscale, puissance_chevaux, crit_air, consommation, description, image1, image2, image3, image4, image5)
-                        VALUES ('$brand', '$price', '$km', '$year', '$first_hand', '$owners', '$energy', '$gearbox', '$color', '$doors', '$seats', '$puissance_fiscale', '$puissance_chevaux', '$crit_air', '$consommation', '$description', '{$image1}', '{$image1}', '{$image1}', '{$image1}', '{$image1}')";
+                        VALUES ('$brand', '$price', '$km', '$year', '$first_hand', '$owners', '$energy', '$gearbox', '$color', '$doors', '$seats', '$puissance_fiscale', '$puissance_chevaux', '$crit_air', '$consommation', '$description', '{$image1}', '{$image2}', '{$image3}', '{$image4}', '{$image5}')";
                 $res = mysqli_query($conn, $query);
                  }
             ?>
@@ -136,16 +136,16 @@
                     <input type="file" name="image1" accept="image/*" required>
 
                     <label>Image 2 : </label>
-                    <input type="file" name="image2" required>
+                    <input type="file" name="image2" accept="image/*" required>
 
                     <label>Image 3 : </label>
-                    <input type="file" name="image3" required>
+                    <input type="file" name="image3" accept="image/*" required>
 
                     <label>Image 4 : </label>
-                    <input type="file" name="image4" required>
+                    <input type="file" name="image4" accept="image/*" required>
 
                     <label>Image 5 : </label>
-                    <input type="file" name="image5" required>
+                    <input type="file" name="image5" accept="image/*" required>
 
 
                     <input type="submit" class="button" name="submit" value="Mettre en ligne" required/>

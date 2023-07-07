@@ -97,63 +97,63 @@
                         <caption><h3>Fiche technique du véhicule</h3></caption>
                         <tr>
                             <th>Prix</th>
-                            <td><?php echo $row['price'];?> €</td>
+                            <td><?php echo strip_tags($row['price']);?> €</td>
                         </tr>
                         <tr>
                             <th>kilométrage</th>
-                            <td><?php echo $row['km'];?> km</td>
+                            <td><?php echo strip_tags($row['km']);?> km</td>
                         </tr>
                         <tr>
                             <th>Année</th>
-                            <td><?php echo $row['year'];?></td>
+                            <td><?php echo strip_tags($row['year']);?></td>
                         </tr>
                         <tr>
                             <th>Première main</th>
-                            <td><?php echo $row['first_hand'];?></td>
+                            <td><?php echo strip_tags($row['first_hand']);?></td>
                         </tr>
                         <tr>
                             <th>Propriétaires</th>
-                            <td><?php echo $row['owners'];?></td>
+                            <td><?php echo strip_tags($row['owners']);?></td>
                         </tr>
                         <tr>
                             <th>Energie</th>
-                            <td><?php echo $row['energy'];?></td>
+                            <td><?php echo strip_tags($row['energy']);?></td>
                         </tr>
                         <tr>
                             <th>Boîte de vitesse</th>
-                            <td><?php echo $row['gearbox'];?></td>
+                            <td><?php echo strip_tags($row['gearbox']);?></td>
                         </tr>
                         <tr>
                             <th>Couleur</th>
-                            <td><?php echo $row['color'];?></td>
+                            <td><?php echo strip_tags($row['color']);?></td>
                         </tr>
                         <tr>
                             <th>Portes</th>
-                            <td><?php echo $row['doors'];?></td>
+                            <td><?php echo strip_tags($row['doors']);?></td>
                         </tr>
                         <tr>
                             <th>Places</th>
-                            <td><?php echo $row['seats'];?></td>
+                            <td><?php echo strip_tags($row['seats']);?></td>
                         </tr>
                         <tr>
                             <th>Puissance fiscale</th>
-                            <td><?php echo $row['puissance_fiscale'];?> CV</td>
+                            <td><?php echo strip_tags($row['puissance_fiscale']);?> CV</td>
                         </tr>
                         <tr>
                             <th>Puissance</th>
-                            <td><?php echo $row['puissance_chevaux'];?> CV</td>
+                            <td><?php echo strip_tags($row['puissance_chevaux']);?> CV</td>
                         </tr>
                         <tr>
                             <th>Crit'Air</th>
-                            <td><?php echo $row['crit_air'];?></td>
+                            <td><?php echo strip_tags($row['crit_air']);?></td>
                         </tr>
                         <tr>
                             <th>Consommation</th>
-                            <td><?php echo $row['consommation'];?></td>
+                            <td><?php echo strip_tags($row['consommation']);?></td>
                         </tr>
                         <tr>
                             <th>Description</th>
-                            <td><?php echo $row['description'];?></td>
+                            <td><?php echo strip_tags($row['description']);?></td>
                         </tr>
 
                     </table>
@@ -167,7 +167,7 @@
                             <label>Email: <span>*</span></label><span id="info" class="info"></span>
                             <input type="text" id="email" name="email" placeholder="Email"/>
                             <label>Sujet: <span>*</span></label>
-                            <input type="text" id="subject" name="subject" value="<?php echo $row['brand'];?>, <?php echo $row['year'];?>, <?php echo $row['price'];?> €, <?php echo $row['km'];?> km"/>
+                            <input type="text" id="subject" name="subject" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['year']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km"/>
                             <label>Message:</label>
                             <textarea id="message" name="message" placeholder="Besoin d'information ? Ecrivez-nous ici !"></textarea>
                             <input class="button" type="submit" name="send" value="Envoyer le message"/>

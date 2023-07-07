@@ -34,17 +34,17 @@
     <main class="reviews-update">
         <h2>Modérer un avis</h2>
         <div class="reviews">
-            <p><strong class="reviews-name"><?php echo $row["name"];?></strong></p>
+            <p><strong class="reviews-name"><?php echo strip_tags($row["name"]);?></strong></p>
             <p><?php echo $row["score"];?></p>
-            <p class="message"><?php echo $row["message"];?></p>
+            <p class="message"><?php echo strip_tags($row["message"]);?></p>
         </div>
         <form method="post" action="">
             <p><?php if(isset($message)) { echo $message; } ?></p>
 
             <div class="reviews-display">
                 <label>Afficher cet avis ? </label>
-                <input type="hidden" name="id"  value="<?php echo $row['id']; ?>">
-                <input type="text" name="display"  placeholder="<?php echo $row['display']; ?>">
+                <input type="hidden" name="id"  value="<?php echo strip_tags($row['id']); ?>">
+                <input type="text" name="display"  placeholder="<?php echo strip_tags($row['display']); ?>">
             </div>
             <input type="submit" name="submit" value="Modérer cet avis" class="button">
         </form>

@@ -18,13 +18,13 @@
                         while($row = mysqli_fetch_array($result)) {
                 ?>
                 <h4>Horaires d'ouverture</h4>
-                <p>Lundi: <?php echo $row["lundi"];?> </p>
-                <p>Mardi: <?php echo $row['mardi'];?></p>
-                <p>Mercredi: <?php echo $row['mercredi'];?></p>
-                <p>Jeudi: <?php echo $row['jeudi'];?></p>
-                <p>Vendredi: <?php echo $row['vendredi'];?></p>
-                <p>Samedi: <?php echo $row['samedi'];?></p>
-                <p>Dimanche: <?php echo $row['dimanche'];?></p>
+                <p>Lundi: <?php echo strip_tags($row["lundi"]);?> </p>
+                <p>Mardi: <?php echo strip_tags($row['mardi']);?></p>
+                <p>Mercredi: <?php echo strip_tags($row['mercredi']);?></p>
+                <p>Jeudi: <?php echo strip_tags($row['jeudi']);?></p>
+                <p>Vendredi: <?php echo strip_tags($row['vendredi']);?></p>
+                <p>Samedi: <?php echo strip_tags($row['samedi']);?></p>
+                <p>Dimanche: <?php echo strip_tags($row['dimanche']);?></p>
             </section>
             <?php
                 $i++;

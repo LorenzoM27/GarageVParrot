@@ -12,8 +12,8 @@
             <div class="div-activity">
             <img class="activity-image" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
                 <div class="activity-detail">
-                    <h3><?php echo $row["services"];?></h3>
-                    <p><?php echo $row["description"];?></p>
+                    <h3><?php echo strip_tags($row["services"]);?></h3>
+                    <p><?php echo strip_tags($row["description"]);?></p>
                     <a class="button" href="occasion/occasions.php">Voir nos véhicules</a>
                 </div>
             </div>

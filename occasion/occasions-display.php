@@ -13,14 +13,14 @@
 
             <div class="card-body">
 
-                <p class="card-data"> <strong>Marque et modèle :</strong> <?php echo $row['brand'];?></p>
-                <p class="card-data"> <strong>Année :</strong> <?php echo $row['year'];?></p>
-                <p class="card-data"><?php echo $row['energy'];?></p>
-                <p class="card-data"><?php echo $row['km'];?> km</p>
-                <p class="card-data price"><strong><?php echo $row['price'];?> €</strong></p>
+                <p class="card-data"> <strong>Marque et modèle :</strong> <?php echo strip_tags($row['brand']);?></p>
+                <p class="card-data"> <strong>Année :</strong> <?php echo strip_tags($row['year']);?></p>
+                <p class="card-data"><?php echo strip_tags($row['energy']);?></p>
+                <p class="card-data"><?php echo strip_tags($row['km']);?> km</p>
+                <p class="card-data price"><strong><?php echo strip_tags($row['price']);?> €</strong></p>
 
             </div>
-            <a class="button" href="occasion-car-detail.php?id=<?php echo $row["id"]; ?>">Détail</a>
+            <a class="button" href="occasion-car-detail.php?id=<?php echo strip_tags($row["id"]); ?>">Détail</a>
     </div>
     <?php
                 $i++;

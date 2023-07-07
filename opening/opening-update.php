@@ -25,13 +25,13 @@
         <section>
             <h2>Les horaires actuels du garage</h2>
             <div>
-                <p>Lundi: <?php echo $row["lundi"];?> </p>
-                <p>Mardi: <?php echo $row['mardi'];?></p>
-                <p>Mercredi: <?php echo $row['mercredi'];?></p>
-                <p>Jeudi: <?php echo $row['jeudi'];?></p>
-                <p>Vendredi: <?php echo $row['vendredi'];?></p>
-                <p>Samedi: <?php echo $row['samedi'];?></p>
-                <p>Dimanche: <?php echo $row['dimanche'];?></p>
+                <p>Lundi: <?php echo strip_tags($row["lundi"]);?> </p>
+                <p>Mardi: <?php echo strip_tags($row['mardi']);?></p>
+                <p>Mercredi: <?php echo strip_tags($row['mercredi']);?></p>
+                <p>Jeudi: <?php echo strip_tags($row['jeudi']);?></p>
+                <p>Vendredi: <?php echo strip_tags($row['vendredi']);?></p>
+                <p>Samedi: <?php echo strip_tags($row['samedi']);?></p>
+                <p>Dimanche: <?php echo strip_tags($row['dimanche']);?></p>
             </div>
             <a class= "button" href="opening-update-process.php?id=<?php echo $row["id"]; ?>">Mettre à jour les horaires d'ouverture</a>
             

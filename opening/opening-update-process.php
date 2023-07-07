@@ -44,32 +44,32 @@ $row= mysqli_fetch_array($result);
 
             <div class="day">
                 <label>Lundi : </label>
-                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                <input type="text" name="lundi"  value="<?php echo $row['lundi']; ?>">
+                <input type="hidden" name="id" value="<?php echo strip_tags($row['id']); ?>">
+                <input type="text" name="lundi"  value="<?php echo strip_tags($row['lundi']); ?>">
             </div>
             <div class="day">
                 <label>Mardi : </label>
-                <input type="text" name="mardi"  value="<?php echo $row['mardi']; ?>">
+                <input type="text" name="mardi"  value="<?php echo strip_tags($row['mardi']); ?>">
             </div>
             <div class="day">
                 <label>Mercredi : </label>
-                <input type="text" name="mercredi"  value="<?php echo $row['mercredi']; ?>">
+                <input type="text" name="mercredi"  value="<?php echo strip_tags($row['mercredi']); ?>">
             </div>
             <div class="day">
                 <label>Jeudi : </label>
-                <input type="text" name="jeudi"  value="<?php echo $row['jeudi']; ?>">
+                <input type="text" name="jeudi"  value="<?php echo strip_tags($row['jeudi']); ?>">
             </div>
             <div class="day">
                 <label>vendredi : </label>
-                <input type="text" name="vendredi"  value="<?php echo $row['vendredi']; ?>">
+                <input type="text" name="vendredi"  value="<?php echo strip_tags($row['vendredi']); ?>">
             </div>
             <div class="day">
                 <label>Samedi : </label>
-                <input type="text" name="samedi"  value="<?php echo $row['samedi']; ?>">
+                <input type="text" name="samedi"  value="<?php echo strip_tags($row['samedi']); ?>">
             </div>
             <div class="day">
                 <label>Dimanche : </label>
-                <input type="text" name="dimanche" value="<?php echo $row['dimanche']; ?>">
+                <input type="text" name="dimanche" value="<?php echo strip_tags($row['dimanche']); ?>">
             </div>
             <input type="submit" name="submit" value="Modifier les horaires" class="button">
             

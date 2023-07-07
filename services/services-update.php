@@ -29,8 +29,8 @@ $result = mysqli_query($conn,"SELECT * FROM services");
             <div class="service">
                 <div>
                 <img class="activity-image" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
-                    <h3><?php echo $row["services"];?> </h3>
-                    <p class="description"><?php echo $row['description'];?></p>
+                    <h3><?php echo strip_tags($row["services"]);?> </h3>
+                    <p class="description"><?php echo strip_tags($row['description']);?></p>
                     
                 </div>
                 <a class= "button" href="services-update-process.php?id=<?php echo $row["id"]; ?>">Mettre à jour ce service</a>

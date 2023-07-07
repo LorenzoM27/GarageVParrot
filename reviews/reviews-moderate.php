@@ -28,7 +28,7 @@
                 ?>
                     
                     <div class="reviews">
-                        <p><strong class="reviews-name"><?php echo $row["name"];?></strong></p>
+                        <p><strong class="reviews-name"><?php echo strip_tags($row["name"]);?></strong></p>
                         <p><?php echo $row["score"];?></p>
                         <p class="message"><?php echo $row["message"];?></p>
                         <div class="reviews-list-update">
