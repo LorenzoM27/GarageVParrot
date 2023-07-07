@@ -85,49 +85,49 @@
                     <h2>Ajouter une annonce</h2>
 
                     <label>Marque :</label>
-                    <input type="text" name="brand" value="a" required />
+                    <input type="text" name="brand" required />
 
                     <label>Prix : </label>
-                    <input type="text" name="price" value=1 required/>
+                    <input type="text" name="price" required/>
 
                     <label>Kilometrage :</label>
-                    <input type="text" name="km" value=1 required />
+                    <input type="text" name="km" required />
 
                     <label>Année :</label>
-                    <input type="text" name="year" value=1 required />
+                    <input type="text" name="year" required />
 
                     <label>Première main :</label>
-                    <input type="text" name="first_hand" value="a" required />
+                    <input type="text" name="first_hand" required />
 
                     <label>Nombre de propriétaires :</label>
-                    <input type="text" name="owners" value=1 required />
+                    <input type="text" name="owners" required />
 
                     <label>Energie :</label>
-                    <input type="text" name="energy" value="a" required />
+                    <input type="text" name="energy" required />
 
                     <label>Boîte de vitesse :</label>
-                    <input type="text" name="gearbox" value="a" required />
+                    <input type="text" name="gearbox" required />
 
                     <label>Couleur :</label>
-                    <input type="text" name="color" value="a" required />
+                    <input type="text" name="color" required />
 
                     <label>Nombre de portes :</label>
-                    <input type="text" name="doors" value=1 required />
+                    <input type="text" name="doors" required />
 
                     <label>Nombre de places :</label>
-                    <input type="text" name="seats" value=1 required />
+                    <input type="text" name="seats" required />
 
                     <label>Puissance fiscale :</label>
-                    <input type="text" name="puissance_fiscale" value=1 required />
+                    <input type="text" name="puissance_fiscale" required />
 
                     <label>Puissance chevaux :</label>
-                    <input type="text" name="puissance_chevaux" value=1 required />
+                    <input type="text" name="puissance_chevaux" required />
 
                     <label>Crit'Air :</label>
-                    <input type="text" name="crit_air" value=1 required />
+                    <input type="text" name="crit_air" required />
 
                     <label>Consommation :</label>
-                    <input type="text" name="consommation" value=1 required />
+                    <input type="text" name="consommation" required />
 
                     <label>Description : </label>
                     <textarea name="description" placeholder="Description, options du véhicule..." required></textarea>
