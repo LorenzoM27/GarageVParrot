@@ -13,7 +13,7 @@
                 <div class="activity-detail">
                     <h3><?php echo strip_tags($row["services"]);?></h3>
                     <p><?php echo strip_tags($row["description"]);?></p>
-                    <a class="button" href="#">Prendre rendez-vous</a>
+                    <a class="button" href="">Prendre rendez-vous</a>
                 </div>
                 <img class="activity-image2" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
             </div>

@@ -14,7 +14,7 @@
                 <div class="activity-detail">
                     <h3><?php echo strip_tags($row["services"]);?></h3>
                     <p><?php echo strip_tags($row["description"]);?></p>
-                    <a class="button" href="#">Prendre rendez-vous</a>
+                    <a class="button" href="">Prendre rendez-vous</a>
                 </div>
             </div>
             <?php
