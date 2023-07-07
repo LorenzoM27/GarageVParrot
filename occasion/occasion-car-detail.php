@@ -1,6 +1,7 @@
-<?php 
+
+<?php
     require('../registration/config.php');
-    $result = mysqli_query($conn,"SELECT * FROM occasion_cars");
+    $result = mysqli_query($conn,"SELECT * FROM occasion_cars WHERE id='" . $_GET['id'] . "'");
 ?>
 
 <?php
@@ -62,7 +63,7 @@
                         $i=0;
                         while($row = mysqli_fetch_array($result)) {
                 ?>
-                <h2><?php echo $row['marque'];?></h2>
+                <h2><?php echo $row['brand'];?></h2>
                 <section class="slider-section">
                     <div class="slider">
                         <div class="slider-nav">
@@ -93,46 +94,46 @@
                         </div>
                     </div>
                     <table>
-                        <caption><h3>Détail techniques du véhicule</h3></caption>
+                        <caption><h3>Fiche technique du véhicule</h3></caption>
                         <tr>
                             <th>Prix</th>
-                            <td><?php echo $row['prix'];?> €</td>
+                            <td><?php echo $row['price'];?> €</td>
                         </tr>
                         <tr>
                             <th>kilométrage</th>
-                            <td><?php echo $row['kilométrage'];?> km</td>
+                            <td><?php echo $row['km'];?> km</td>
                         </tr>
                         <tr>
                             <th>Année</th>
-                            <td><?php echo $row['année'];?></td>
+                            <td><?php echo $row['year'];?></td>
                         </tr>
                         <tr>
                             <th>Première main</th>
-                            <td><?php echo $row['premiere_main'];?></td>
+                            <td><?php echo $row['first_hand'];?></td>
                         </tr>
                         <tr>
                             <th>Propriétaires</th>
-                            <td><?php echo $row['nbr_proprietaires'];?></td>
+                            <td><?php echo $row['owners'];?></td>
                         </tr>
                         <tr>
                             <th>Energie</th>
-                            <td><?php echo $row['energie'];?></td>
+                            <td><?php echo $row['energy'];?></td>
                         </tr>
                         <tr>
                             <th>Boîte de vitesse</th>
-                            <td><?php echo $row['boite_vitesse'];?></td>
+                            <td><?php echo $row['gearbox'];?></td>
                         </tr>
                         <tr>
                             <th>Couleur</th>
-                            <td><?php echo $row['couleur'];?></td>
+                            <td><?php echo $row['color'];?></td>
                         </tr>
                         <tr>
                             <th>Portes</th>
-                            <td><?php echo $row['nbre_portes'];?></td>
+                            <td><?php echo $row['doors'];?></td>
                         </tr>
                         <tr>
                             <th>Places</th>
-                            <td><?php echo $row['nbre_places'];?></td>
+                            <td><?php echo $row['seats'];?></td>
                         </tr>
                         <tr>
                             <th>Puissance fiscale</th>
@@ -166,7 +167,7 @@
                             <label>Email: <span>*</span></label><span id="info" class="info"></span>
                             <input type="text" id="email" name="email" placeholder="Email"/>
                             <label>Sujet: <span>*</span></label>
-                            <input type="text" id="subject" name="subject" value="<?php echo $row['marque'];?>, <?php echo $row['année'];?>, <?php echo $row['prix'];?> €, <?php echo $row['kilométrage'];?> km"/>
+                            <input type="text" id="subject" name="subject" value="<?php echo $row['brand'];?>, <?php echo $row['year'];?>, <?php echo $row['price'];?> €, <?php echo $row['km'];?> km"/>
                             <label>Message:</label>
                             <textarea id="message" name="message" placeholder="Besoin d'information ? Ecrivez-nous ici !"></textarea>
                             <input class="button" type="submit" name="send" value="Envoyer le message"/>

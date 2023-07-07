@@ -6,7 +6,7 @@
             <nav class="headerNav">
                 <ul class="container">
                     <li><a class="t" href="#"> </a></li>
-                    <li><a class="header-button" href="#">Gérer les véhicules d'occasion</a></li>
+                    <li><a class="header-button" href="../occasion/add-car.php">Véhicules d'occasion</a></li>
                     <li><a class="header-button" href="../reviews/reviews-moderate.php">Modérer les avis</a></li>
                     <li><a class="header-button" href="../registration/logout.php">Déconnexion</a></li>
                 </ul>
