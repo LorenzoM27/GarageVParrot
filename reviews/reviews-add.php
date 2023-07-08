@@ -49,7 +49,7 @@
             ?>
             <div class="form">
                 <form class="form" action="" method="post">
-                    <h2>Donner mon avis</h2>
+                    <h2>Votre avis compte, donnez le nous !</h2>
                     <label>Nom :</label>
                     <input type="text" name="name" placeholder="Nom" required />
                     <label>Note : </label>
@@ -62,5 +62,6 @@
             </div>
             
         </main>
+        <?php include('../includes/footer.php'); ?>
    </body>
 </html>
