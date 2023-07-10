@@ -162,13 +162,13 @@
                     <div id="box">
                         <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
                             <h2>Nous contacter pour ce véhicule</h2>
-                            <label>Nom: <span>*</span></label>
+                            <label>Nom : <span>*</span></label>
                             <input type="text" id="name" name="name" placeholder="Nom"/>
-                            <label>Email: <span>*</span></label><span id="info" class="info"></span>
+                            <label>Email : <span>*</span></label><span id="info" class="info"></span>
                             <input type="text" id="email" name="email" placeholder="Email"/>
-                            <label>Sujet: <span>*</span></label>
+                            <label>Informations du véhicule : <span>*</span></label>
                             <input type="text" id="subject" name="subject" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['year']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km"/>
-                            <label>Message:</label>
+                            <label>Message :</label>
                             <textarea id="message" name="message" placeholder="Besoin d'information ? Ecrivez-nous ici !"></textarea>
                             <input class="button" type="submit" name="send" value="Envoyer le message"/>
                             <div id="statusMessage">
