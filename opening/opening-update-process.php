@@ -2,14 +2,14 @@
 require('../registration/config.php');
 if(count($_POST)>0) {
 //mysqli_query($conn,"UPDATE horaires set id='" . $_POST['id'] . "', lundi'" . $_POST['lundi'] . "', mardi='" . $_POST['mardi'] . "', mercredi='" . $_POST['mercredi'] . "' ,jeudi='" . $_POST['jeudi'] ."', vendredi'" . $_POST['vendredi'] . "', samedi'" . $_POST['samedi'] ."', dimanche'" . $_POST['dimanche'] . "' WHERE id='" . $_POST['id'] . "'");
-$id = $_POST['id'];
-$lundi = $_POST['lundi'];
-$mardi = $_POST['mardi'];
-$mercredi = $_POST['mercredi'];
-$jeudi = $_POST['jeudi'];
-$vendredi = $_POST['vendredi'];
-$samedi = $_POST['samedi'];
-$dimanche = $_POST['dimanche'];
+$id = strip_tags($_POST['id']);
+$lundi = strip_tags($_POST['lundi']);
+$mardi = strip_tags($_POST['mardi']);
+$mercredi = strip_tags($_POST['mercredi']);
+$jeudi = strip_tags($_POST['jeudi']);
+$vendredi = strip_tags($_POST['vendredi']);
+$samedi = strip_tags($_POST['samedi']);
+$dimanche = strip_tags($_POST['dimanche']);
 
 $query = "UPDATE `horaires` SET `id`='".$id."',`lundi`='".$lundi."',`mardi`='".$mardi."',`mercredi`='".$mercredi."',`jeudi`='".$jeudi."',`vendredi`='".$vendredi."',`samedi`='".$samedi."',`dimanche`='".$dimanche."' WHERE `id` = '".$id."'";
 

@@ -2,8 +2,8 @@
     require('../registration/config.php');
     if(count($_POST)>0) {
 
-    $id = $_POST['id'];
-    $display = $_POST['display'];
+    $id = strip_tags($_POST['id']);
+    $display = strip_tags($_POST['display']);
 
     $query = "UPDATE `reviews` SET `id`='".$id."',`display`='".$display."' WHERE id='" . $_GET['id'] . "'";
 

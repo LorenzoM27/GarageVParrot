@@ -3,9 +3,9 @@ require('../registration/config.php');
 
 if(count($_POST)>0) {
 
-    $id = $_POST['id'];
-    $services = $_POST['services'];
-    $description = $_POST['description'];
+    $id = strip_tags($_POST['id']);
+    $services = strip_tags($_POST['services']);
+    $description = strip_tags($_POST['description']);
     $image = $_POST['image'];
     
     

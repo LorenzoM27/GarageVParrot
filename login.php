@@ -15,10 +15,10 @@
         require('registration/config.php');
         session_start();
         if (isset($_POST['email'])){
-        $email = stripslashes($_REQUEST['email']);
+        $email = strip_tags($_REQUEST['email']);
         $email = mysqli_real_escape_string($conn, $email);
         $_SESSION['email'] = $email;
-        $password = stripslashes($_REQUEST['password']);
+        $password = strip_tags($_REQUEST['password']);
         $password = mysqli_real_escape_string($conn, $password);
             $query = "SELECT * FROM `users` WHERE email='$email' and password='".hash('sha256', $password)."'";
         

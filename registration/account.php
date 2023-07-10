@@ -16,13 +16,13 @@
             require('config.php');
             if (isset($_REQUEST['email'], $_REQUEST['type'], $_REQUEST['password'])){
                
-              $email = stripslashes($_REQUEST['email']);
+              $email = strip_tags($_REQUEST['email']);
               $email = mysqli_real_escape_string($conn, $email);
             
-              $type = stripslashes($_REQUEST['type']);
+              $type = strip_tags($_REQUEST['type']);
               $type = mysqli_real_escape_string($conn, $type); 
             
-              $password = stripslashes($_REQUEST['password']);
+              $password = strip_tags($_REQUEST['password']);
               $password = mysqli_real_escape_string($conn, $password);
                
               $query = "INSERT into `users` ( email, type, password)

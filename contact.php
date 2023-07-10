@@ -6,10 +6,10 @@
 
 <?php
     if(!empty($_POST["send"])) {
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $subject = $_POST["subject"];
-        $message = $_POST["message"];
+        $name = strip_tags($_POST["name"]);
+        $email = strip_tags($_POST["email"]);
+        $subject = strip_tags($_POST["subject"]);
+        $message = strip_tags($_POST["message"]);
     
         $toEmail = "lorenzo.menino@gmail.com";
         // le mdp -> VParrotGarage et mail : vincent.parrotgarage@gmail.com

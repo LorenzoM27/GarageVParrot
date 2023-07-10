@@ -2,16 +2,16 @@
     <?php
         if (isset($_REQUEST['name'], $_REQUEST['score'], $_REQUEST['display'], $_REQUEST['message'])){
                 
-            $name = stripslashes($_REQUEST['name']);
+            $name = strip_tags($_REQUEST['name']);
             $name = mysqli_real_escape_string($conn, $name);
                     
-            $score = stripslashes($_REQUEST['score']); 
+            $score = strip_tags($_REQUEST['score']); 
             $score = mysqli_real_escape_string($conn, $score);
                     
-            $display = stripslashes($_REQUEST['display']);
+            $display = strip_tags($_REQUEST['display']);
             $display = mysqli_real_escape_string($conn, $display);
 
-            $message = stripslashes($_REQUEST['message']);
+            $message = strip_tags($_REQUEST['message']);
             $message = mysqli_real_escape_string($conn, $message);
                     
             $query = "INSERT into `reviews` ( name, score, display, message)

@@ -17,52 +17,52 @@
                 //if (isset($_REQUEST['brand'], $_REQUEST['price'], $_REQUEST['km'], $_REQUEST['year'], $_REQUEST['first_hand'], $_REQUEST['owners'], $_REQUEST['energy'], $_REQUEST['gearbox'], $_REQUEST['color'], $_REQUEST['doors'], $_REQUEST['seats'], $_REQUEST['puissance_fiscale'], $_REQUEST['puissance_chevaux'], $_REQUEST['crit_air'], $_REQUEST['consommation'], $_REQUEST['description'], $_FILES['image1'], $_REQUEST['image2'], $_REQUEST['image3'], $_REQUEST['image4'], $_REQUEST['image5'])){
                   if (isset($_POST['submit'])) {
                 
-                $brand = stripslashes($_REQUEST['brand']);
+                $brand = strip_tags($_REQUEST['brand']);
                 $brand = mysqli_real_escape_string($conn, $brand);
 
-                $price = stripslashes($_REQUEST['price']);
+                $price = strip_tags($_REQUEST['price']);
                 $price = mysqli_real_escape_string($conn, $price);
 
-                $km = stripslashes($_REQUEST['km']);
+                $km = strip_tags($_REQUEST['km']);
                 $km = mysqli_real_escape_string($conn, $km);
 
-                $year = stripslashes($_REQUEST['year']);
+                $year = strip_tags($_REQUEST['year']);
                 $year = mysqli_real_escape_string($conn, $year);
 
-                $first_hand = stripslashes($_REQUEST['first_hand']);
+                $first_hand = strip_tags($_REQUEST['first_hand']);
                 $first_hand = mysqli_real_escape_string($conn, $first_hand);
 
-                $owners = stripslashes($_REQUEST['owners']);
+                $owners = strip_tags($_REQUEST['owners']);
                 $owners = mysqli_real_escape_string($conn, $owners);
 
-                $energy = stripslashes($_REQUEST['energy']);
+                $energy = strip_tags($_REQUEST['energy']);
                 $energy = mysqli_real_escape_string($conn, $energy);
 
-                $gearbox = stripslashes($_REQUEST['gearbox']);
+                $gearbox = strip_tags($_REQUEST['gearbox']);
                 $gearbox = mysqli_real_escape_string($conn, $gearbox);
 
-                $color = stripslashes($_REQUEST['color']);
+                $color = strip_tags($_REQUEST['color']);
                 $color = mysqli_real_escape_string($conn, $color);
 
-                $doors = stripslashes($_REQUEST['doors']);
+                $doors = strip_tags($_REQUEST['doors']);
                 $doors = mysqli_real_escape_string($conn, $doors);
                 
-                $seats = stripslashes($_REQUEST['seats']); 
+                $seats = strip_tags($_REQUEST['seats']); 
                 $seats = mysqli_real_escape_string($conn, $seats);
                 
-                $puissance_fiscale = stripslashes($_REQUEST['puissance_fiscale']);
+                $puissance_fiscale = strip_tags($_REQUEST['puissance_fiscale']);
                 $puissance_fiscale = mysqli_real_escape_string($conn, $puissance_fiscale);
 
-                $puissance_chevaux = stripslashes($_REQUEST['puissance_chevaux']);
+                $puissance_chevaux = strip_tags($_REQUEST['puissance_chevaux']);
                 $puissance_chevaux = mysqli_real_escape_string($conn, $puissance_chevaux);
 
-                $crit_air = stripslashes($_REQUEST['crit_air']);
+                $crit_air = strip_tags($_REQUEST['crit_air']);
                 $crit_air = mysqli_real_escape_string($conn, $crit_air);
 
-                $consommation = stripslashes($_REQUEST['consommation']);
+                $consommation = strip_tags($_REQUEST['consommation']);
                 $consommation = mysqli_real_escape_string($conn, $consommation);
 
-                $description = stripslashes($_REQUEST['description']);
+                $description = strip_tags($_REQUEST['description']);
                 $description = mysqli_real_escape_string($conn, $description);
 
 
