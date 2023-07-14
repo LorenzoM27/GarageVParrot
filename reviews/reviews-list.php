@@ -25,7 +25,7 @@
                 }
                 }
                 else{
-                    echo "Aucun résultat";
+                    echo "Aucun avis pour l'instant, soyez le premier !";
                 }
             ?>
 

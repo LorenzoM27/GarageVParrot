@@ -4,25 +4,6 @@
     $result = mysqli_query($conn,"SELECT * FROM occasion_cars WHERE id='" . $_GET['id'] . "'");
 ?>
 
-<?php
-    if(!empty($_POST["send"])) {
-        $name = strip_tags($_POST["name"]);
-        $email = strip_tags($_POST["email"]);
-        $subject = strip_tags($_POST["subject"]);
-        $message = strip_tags($_POST["message"]);
-    
-        $toEmail = "lorenzo.menino@gmail.com";
-        // le mdp -> VParrotGarage et mail : vincent.parrotgarage@gmail.com
-        $mailHeaders = "From: " . $name . "<". $email .">\r\n";
-        if(mail($toEmail, $subject, $message, $mailHeaders)) {
-            $mail_msg = "Votre message à bien été envoyé.";
-            $type_mail_msg = "success";
-        }else{
-            $mail_msg = "Une erreur est survenue, veuillez réessayer.";
-            $type_mail_msg = "error";
-        }
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -38,7 +19,7 @@
     <link rel="stylesheet" href="../css/common.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/slider.css"/>
     <link rel="stylesheet" href="../css/occasion-detail.css" type="text/css">
-    <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="stylesheet" href="../css/reviews.css" type="text/css">
     <title>Nos véhicules d'occasions</title>
 </head>
 <body>
@@ -159,26 +140,37 @@
                     </table>
                 </section>
                 <section class="contact-section">
-                    <div id="box">
-                        <form id="form" enctype="multipart/form-data" onsubmit="return validate()" method="post">
-                            <h2>Nous contacter pour ce véhicule</h2>
-                            <label>Nom : <span>*</span></label>
-                            <input type="text" id="name" name="name" placeholder="Nom"/>
-                            <label>Email : <span>*</span></label><span id="info" class="info"></span>
-                            <input type="text" id="email" name="email" placeholder="Email"/>
-                            <label>Informations du véhicule : <span>*</span></label>
-                            <input type="text" id="subject" name="subject" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['year']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km"/>
-                            <label>Message :</label>
-                            <textarea id="message" name="message" placeholder="Besoin d'information ? Ecrivez-nous ici !"></textarea>
-                            <input class="button" type="submit" name="send" value="Envoyer le message"/>
-                            <div id="statusMessage">
-                                <?php if (! empty($db_msg)) { ?>
-                                <p class='<?php echo $type_db_msg; ?>Message'><?php echo $db_msg; ?></p>
-                                <?php } ?>
-                                <?php if (! empty($mail_msg)) { ?>
-                                <p class='<?php echo $type_mail_msg; ?>Message'><?php echo $mail_msg; ?></p>
-                                <?php } ?>
-                            </div>
+                    <?php
+                            if (isset($_REQUEST['name'], $_REQUEST['email'], $_REQUEST['sujet'], $_REQUEST['message'])){
+                            
+                            $name = strip_tags($_REQUEST['name']);
+                            $name = mysqli_real_escape_string($conn, $name);
+                            
+                            $email = strip_tags($_REQUEST['email']); 
+                            $email = mysqli_real_escape_string($conn, $email);
+                            
+                            $sujet = strip_tags($_REQUEST['sujet']);
+                            $sujet = mysqli_real_escape_string($conn, $sujet);
+
+                            $message = strip_tags($_REQUEST['message']);
+                            $message = mysqli_real_escape_string($conn, $message);
+                            
+                            $query = "INSERT into `contact` ( name, email, sujet, message)
+                                    VALUES ('$name', '$email', '$sujet', '$message')";
+                            $res = mysqli_query($conn, $query);
+                            }
+                    ?>
+                   <div class="form">
+                        <form class="form" action="" method="post">
+                            <h2>Nous contacter</h2>
+                            <label>Nom :</label>
+                            <input type="text" name="name" placeholder="Nom" required />
+                            <label>Email : </label>
+                            <input type="text" name="email" placeholder="Email" required/>
+                            <input type="hidden" name="sujet" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km, <?php echo strip_tags($row['energy']);?>" required />
+                            <label>Mon message: </label>
+                            <textarea name="message" placeholder="Dites nous ce qui vous tracasse !" required></textarea>
+                            <input type="submit" class="button" name="submit" value="Envoyer mon message" required/>
                         </form>
                     </div>
                 </section>

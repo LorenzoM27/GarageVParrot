@@ -39,7 +39,7 @@ $row= mysqli_fetch_array($result);
 <body>
     <?php include('../includes/admin-header.php'); ?>
     <main>
-        <h2>Modifier les horaires</h2>
+        <h2>Modifier ce service</h2>
         <form name="service-form" method="post" action="">
             <p><?php if(isset($message)) { echo $message; } ?></p>
 
