@@ -7,6 +7,7 @@
     <link rel="icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="../css/common.css" type="text/css">
     <link rel="stylesheet" href="../css/admin.css" type="text/css">
+    <link rel="stylesheet" href="../css/reviews.css" type="text/css">
     <title>Modérer les avis</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
     <main>
         <h2>Mon espace employé</h2>
         <img class="image" src="../img/planning.png" alt="planning" />
+        <?php include('../contact/message-list.php'); ?>
     </main>
 </body>
 </html>
