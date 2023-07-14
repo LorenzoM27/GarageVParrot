@@ -169,7 +169,7 @@
                             <input type="text" name="email" placeholder="Email" required/>
                             <input type="hidden" name="sujet" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km, <?php echo strip_tags($row['energy']);?>" required />
                             <label>Mon message: </label>
-                            <textarea name="message" placeholder="Dites nous ce qui vous tracasse !" required></textarea>
+                            <textarea name="message" placeholder="Besoin d'information ? Contactez-nous !" required></textarea>
                             <input type="submit" class="button" name="submit" value="Envoyer mon message" required/>
                         </form>
                     </div>
