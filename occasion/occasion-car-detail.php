@@ -142,7 +142,8 @@
                 <section class="contact-section">
                     <?php
                             if (isset($_REQUEST['name'], $_REQUEST['email'], $_REQUEST['sujet'], $_REQUEST['message'])){
-                            
+
+
                             $name = strip_tags($_REQUEST['name']);
                             $name = mysqli_real_escape_string($conn, $name);
                             
@@ -161,15 +162,15 @@
                             }
                     ?>
                    <div class="form">
-                        <form class="form" action="" method="post">
+                        <form class="form" action="" onsubmit="return validate()" method="post">
                             <h2>Nous contacter</h2>
                             <label>Nom :</label>
-                            <input type="text" name="name" placeholder="Nom" required />
-                            <label>Email : </label>
-                            <input type="text" name="email" placeholder="Email" required/>
-                            <input type="hidden" name="sujet" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km, <?php echo strip_tags($row['energy']);?>" required />
+                            <input type="text" id="name" name="name" placeholder="Nom" required />
+                            <label>Email : </label><span id="info" class="info"></span>
+                            <input type="text" id="email" name="email" placeholder="Email" required/>
+                            <input type="hidden" id="subject" name="sujet" value="<?php echo strip_tags($row['brand']);?>, <?php echo strip_tags($row['price']);?> €, <?php echo strip_tags($row['km']);?> km, <?php echo strip_tags($row['energy']);?>" required />
                             <label>Mon message: </label>
-                            <textarea name="message" placeholder="Besoin d'information ? Contactez-nous !" required></textarea>
+                            <textarea name="message" id="message" placeholder="Besoin d'information ? Contactez-nous !" required></textarea>
                             <input type="submit" class="button" name="submit" value="Envoyer mon message" required/>
                         </form>
                     </div>

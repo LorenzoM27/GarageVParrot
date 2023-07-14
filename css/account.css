@@ -17,3 +17,10 @@ form {
     width: 25rem;
     height: 3rem;
 }
+
+.info{
+    font-size: 0.9em;
+    color: #d67262;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}

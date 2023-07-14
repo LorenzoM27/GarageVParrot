@@ -4,6 +4,8 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="../js/contact.js"></script>
       <link rel="icon" href="../img/favicon.png" />
       <link rel="stylesheet" href="../css/common.css" type="text/css">
       <link rel="stylesheet" href="../css/account.css" type="text/css">
@@ -30,9 +32,10 @@
               $res = mysqli_query($conn, $query);
              }
              ?>
-         <form class="form" action="" method="post">
+         <form class="form" action="" onsubmit="return validate()" method="post">
             <h2 class="form-title">Ajouter un utilisateur</h2>
-            <input type="text" class="form-input" name="email" placeholder="Email" required />
+            <input type="text" class="form-input" id="email" name="email" placeholder="Email" required />
+            <span id="info" class="info"></span>
             <input type="password" class="form-input" name="password" placeholder="Mot de passe" required />
             <input type="text" class="form-input" name="type" placeholder="admin/user" required />
             <input type="submit" class="button" name="submit" value="Ajouter un utilisateur" required/>

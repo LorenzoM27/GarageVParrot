@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/contact.js"></script>
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/common.css" type="text/css">
@@ -35,16 +36,16 @@
                 }
             ?>
             <div class="form">
-                <form class="form" action="" method="post">
+                <form class="form" action="" onsubmit="return validate()" method="post">
                     <h2>Nous contacter</h2>
                     <label>Nom :</label>
-                    <input type="text" name="name" placeholder="Nom" required />
-                    <label>Email : </label>
-                    <input type="text" name="email" placeholder="Email" required/>
+                    <input type="text" id="name" name="name" placeholder="Nom" required />
+                    <label>Email : </label><span id="info" class="info"></span>
+                    <input type="text" id="email" name="email" placeholder="Email" required/>
                     <label>Sujet : </label>
-                    <input type="text" name="sujet" placeholder="Couroie de distribution" required />
+                    <input type="text" id="subject" name="sujet" placeholder="Couroie de distribution" required />
                     <label>Mon message: </label>
-                    <textarea name="message" placeholder="Dites nous ce qui vous tracasse !" required></textarea>
+                    <textarea id="message" name="message" placeholder="Dites nous ce qui vous tracasse !" required></textarea>
                     <input type="submit" class="button" name="submit" value="Envoyer mon message" required/>
                 </form>
             </div>
