@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/account.css" type="text/css">
     <title>Accéder à mon espace</title>
 </head>
-<body>
+<body> 
     <?php include('includes/header.php'); ?>
     <?php
         require('registration/config.php');
