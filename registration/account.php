@@ -20,7 +20,7 @@
                
               $email = strip_tags($_REQUEST['email']);
               $email = mysqli_real_escape_string($conn, $email);
-            
+             
               $type = strip_tags($_REQUEST['type']);
               $type = mysqli_real_escape_string($conn, $type); 
             
