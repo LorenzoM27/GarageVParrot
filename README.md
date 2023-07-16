@@ -20,12 +20,43 @@ Your mission will then be to create a showcase web application for Garage V. Par
 * CSS
 * JS
 * PHP
-* MySql database
+* MySQL database
 
 ## Local Install
 
 ### Server
 
+Folow those steps to use localy the web application : 
+
+* Donwload the project and unzip it if you have to
+* Download WAMP, MAMP, LAMP or XAMP and install it
+* Move the project folder into MAMP or others/htdocs
+* launch MAMP and click on start button
+
 ### Database
 
+After starting the server, you have to create the database. Follow those steps :
+
+* Click on WebStart button into MAMP
+* Scroll, click on MySQL and on phpMyAdmin button
+* On import section, import scripts/scriptsDB files in the project starting by users.sql
+* After importing all files, you can import scripts/insertData files in the database
+
+### Launch Website
+
+Finally, you can launch th website, for this you have to : 
+
+* Click on the My Website button on the MAMP web page
+* Select GarageVParrot/
+
 ## Local Use
+
+Admin account : 
+
+email : vincent.parrot@exemple.fr
+password : password
+
+User account : 
+
+email : jean.dupont@exemple.fr
+password : password
