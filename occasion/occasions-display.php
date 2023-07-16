@@ -14,7 +14,7 @@
 
             <div class="card-body">
 
-                <p class="card-data"> <strong>Marque et modèle :</strong> <?php echo strip_tags($row['brand']);?></p>
+                <p class="card-data"> <strong>Modèle :</strong> <?php echo strip_tags($row['brand']);?></p>
                 <p class="card-data"> <strong>Année :</strong> <?php echo strip_tags($row['year']);?></p>
                 <p class="card-data"><?php echo strip_tags($row['energy']);?></p>
                 <p class="card-data"><?php echo strip_tags($row['km']);?> km</p>
