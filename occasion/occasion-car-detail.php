@@ -41,7 +41,7 @@
             <main>
                 <?php
                     if (mysqli_num_rows($result) > 0) {
-                        $i=0;
+                        
                         while($row = mysqli_fetch_array($result)) {
                 ?>
                 <h2><?php echo $row['brand'];?></h2>
@@ -176,7 +176,7 @@
                     </div>
                 </section>
                 <?php
-                    $i++;
+                    
                         }
                     }
                     else{

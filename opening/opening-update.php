@@ -18,7 +18,7 @@
     <?php include('../includes/admin-header.php'); ?>
     <?php
         if (mysqli_num_rows($result) > 0) {
-            $i=0;
+            
 			while($row = mysqli_fetch_array($result)) {
     ?>
     <main>
@@ -39,7 +39,7 @@
 
     </main>
     <?php
-		$i++;
+		
 		}
         }
         else

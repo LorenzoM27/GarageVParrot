@@ -8,7 +8,7 @@
     <div class="reviews-list">
         <?php
             if (mysqli_num_rows($result) > 0) {
-                 $i=0;
+                 
                 while($row = mysqli_fetch_array($result)) {
         ?>
             
@@ -21,7 +21,7 @@
     
             
             <?php
-                $i++;
+                
                 }
                 }
                 else{

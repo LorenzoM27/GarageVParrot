@@ -6,7 +6,7 @@
 <section class="activity">
             <?php
                 if (mysqli_num_rows($result) > 0) {
-                    $i=0;   
+                       
                     while($row = mysqli_fetch_array($result)) {
             ?>
             <div class="div-activity">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <?php
-                $i++;
+                
                 }
             }
             else{

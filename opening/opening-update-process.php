@@ -1,7 +1,7 @@
 <?php
 require('../registration/config.php');
 if(count($_POST)>0) {
-//mysqli_query($conn,"UPDATE horaires set id='" . $_POST['id'] . "', lundi'" . $_POST['lundi'] . "', mardi='" . $_POST['mardi'] . "', mercredi='" . $_POST['mercredi'] . "' ,jeudi='" . $_POST['jeudi'] ."', vendredi'" . $_POST['vendredi'] . "', samedi'" . $_POST['samedi'] ."', dimanche'" . $_POST['dimanche'] . "' WHERE id='" . $_POST['id'] . "'");
+
 $id = strip_tags($_POST['id']);
 $lundi = strip_tags($_POST['lundi']);
 $mardi = strip_tags($_POST['mardi']);

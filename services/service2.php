@@ -6,7 +6,7 @@
 <section class="activity2">
             <?php
                     if (mysqli_num_rows($result) > 0) {
-                        $i=0;
+                        
                         while($row = mysqli_fetch_array($result)) {
             ?>
             <div class="div-activity div-activity2">
@@ -18,7 +18,7 @@
                 <img class="activity-image2" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image']); ?>" />
             </div>
             <?php
-                $i++;
+                
                 }
             }
             else{

@@ -14,7 +14,7 @@
     <main>
         <?php
                 require('../registration/config.php');
-                //if (isset($_REQUEST['brand'], $_REQUEST['price'], $_REQUEST['km'], $_REQUEST['year'], $_REQUEST['first_hand'], $_REQUEST['owners'], $_REQUEST['energy'], $_REQUEST['gearbox'], $_REQUEST['color'], $_REQUEST['doors'], $_REQUEST['seats'], $_REQUEST['puissance_fiscale'], $_REQUEST['puissance_chevaux'], $_REQUEST['crit_air'], $_REQUEST['consommation'], $_REQUEST['description'], $_FILES['image1'], $_REQUEST['image2'], $_REQUEST['image3'], $_REQUEST['image4'], $_REQUEST['image5'])){
+                
                   if (isset($_POST['submit'])) {
                 
                 $brand = strip_tags($_REQUEST['brand']);

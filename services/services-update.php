@@ -23,7 +23,7 @@ $result = mysqli_query($conn,"SELECT * FROM services");
         <section class="service-section">
         <?php
             if (mysqli_num_rows($result) > 0) {
-                $i=0;
+                
                 while($row = mysqli_fetch_array($result)) {
         ?>
             <div class="service">
@@ -36,7 +36,7 @@ $result = mysqli_query($conn,"SELECT * FROM services");
                 <a class= "button" href="services-update-process.php?id=<?php echo $row["id"]; ?>">Mettre à jour ce service</a>
             </div>
             <?php
-		$i++;
+		
 		}
         }
         else

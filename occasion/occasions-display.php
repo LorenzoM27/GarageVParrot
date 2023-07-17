@@ -5,7 +5,7 @@
 <section class="occasion-section">
     <?php
         if (mysqli_num_rows($result) > 0) {
-            $i=0;
+
              while($row = mysqli_fetch_array($result)) {
         ?>
    <div class="card" data-price="<?php echo strip_tags($row['price']);?>" data-km="<?php echo strip_tags($row['km']);?>" data-year="<?php echo strip_tags($row['year']);?>">
@@ -24,13 +24,10 @@
             <a class="button" href="occasion-car-detail.php?id=<?php echo strip_tags($row["id"]); ?>">Détail</a>
     </div>
     <?php
-                $i++;
                 }
-            ?>
-                <?php
                     }
                     else{
-                        echo "Aucun véhicule en vente en ce moment";
+                        echo "Aucun véhicules en vente en ce moment";
                     }
                 ?>
 </section>
