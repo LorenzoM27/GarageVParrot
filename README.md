@@ -30,7 +30,7 @@ Folow those steps to use localy the web application :
 
 * Donwload the project and unzip it if you have to
 * Download WAMP, MAMP, LAMP or XAMP and install it
-* Move the project folder to the whrigt folder
+* Move the project folder into the whrigt folder
 * Launch MAMP/WAMP/LAMP/XAMP and start the server
 
 ### Database
