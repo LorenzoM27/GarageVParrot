@@ -7,7 +7,7 @@
         if (mysqli_num_rows($result) > 0) {
 
              while($row = mysqli_fetch_array($result)) {
-        ?>
+    ?>
    <div class="card" data-price="<?php echo strip_tags($row['price']);?>" data-km="<?php echo strip_tags($row['km']);?>" data-year="<?php echo strip_tags($row['year']);?>">
    
             <img class="occasion-image" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['image1']); ?>" />
@@ -24,11 +24,11 @@
             <a class="button" href="occasion-car-detail.php?id=<?php echo strip_tags($row["id"]); ?>">Détail</a>
     </div>
     <?php
-                }
-                    }
-                    else{
-                        echo "Aucun véhicules en vente en ce moment";
-                    }
-                ?>
+        }
+        }
+            else{
+                echo "Aucun véhicules en vente en ce moment";
+        }
+    ?>
 </section>
             

@@ -7,7 +7,7 @@
                 <ul class="container">
                     <li><a class="t" href="#"> </a></li>
                     <li><a class="header-button" href="../occasion/add-car-admin.php">Véhicules d'occasion</a></li>
-                    <li><a class="header-button" href="../registration/account.php">Gérer les comptes</a></li>
+                    <li><a class="header-button" href="../registration/account.php">Gérer comptes</a></li>
                     <li><a class="header-button" href="../services/services-update.php">Les services</a></li>
                     <li><a class="header-button" href="../opening/opening-update.php">Les horaires</a></li>
                     <li><a class="header-button" href="../reviews/reviews-moderate-admin.php">Modérer les avis</a></li>
