@@ -31,14 +31,14 @@ Folow those steps to use localy the web application :
 * Donwload the project and unzip it if you have to
 * Download WAMP, MAMP, LAMP or XAMP and install it
 * Move the project folder to the whrigt folder
-* launch MAMP/WAMP/LAMP/XAMP and start the server
+* Launch MAMP/WAMP/LAMP/XAMP and start the server
 
 ### Database
 
 After starting the server, you have to create the database. Follow those steps :
 
 * Go to the home page of your software
-* launch phpMyAdmin and connect
+* Launch phpMyAdmin and connect
 * On import section, import scripts/scriptsDB files in the project starting by users.sql
 * After importing all files, you can import scripts/insertData files in the database
 * Modify registration/config.php and enter your username and password
