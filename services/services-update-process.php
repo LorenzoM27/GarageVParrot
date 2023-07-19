@@ -6,18 +6,14 @@ if(count($_POST)>0) {
     $id = strip_tags($_POST['id']);
     $services = strip_tags($_POST['services']);
     $description = strip_tags($_POST['description']);
-    $image = $_POST['image'];
-    
-    
-    //$query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."',`image`='".$image."' WHERE `id` = '".$id."'";
-
+   
     $query = "UPDATE `services` SET `id`='".$id."',`services`='".$services."',`description`='".$description."' WHERE `id` = '".$id."'";
     
     $result = mysqli_query($conn, $query);
     
     $message = "Service modifié avec succés";
     
-    }
+}
 
 
 $result = mysqli_query($conn,"SELECT * FROM services WHERE id='" . $_GET['id'] . "'");
@@ -53,11 +49,6 @@ $row= mysqli_fetch_array($result);
                 <textarea class="service-description" name="description" placeholder="<?php echo strip_tags($row['description']); ?>" required></textarea>
                 
             </div>
-            <!--<div class="service">
-                <label>Image : </label>
-                <input type="file" name="image">
-            </div>-->
-            
             <input type="submit" name="submit" value="Modifier le service" class="button">
             
            
