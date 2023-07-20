@@ -45,10 +45,7 @@ After starting the server, you have to create the database. Follow those steps :
 
 ### Launch Website
 
-Finally, you can launch th website, for this you have to : 
-
-* Click on the My Website button on the MAMP web page
-* Select GarageVParrot/
+Finally, you can launch the website, for this you have to select GarageVParrot/
 
 ## Local Use
 
